@@ -6,11 +6,13 @@ class Vehiculo {
 
 class Auto extends Vehiculo {
     constructor(marca, modelo) {
+        //Faltaba añadir un super para heredar el atributo marca
+        super(marca)
         this.modelo = modelo;
     }
 
     mostrarInfo() {
-        console.log(`Auto: ${this.marca} ${this.modelo}`);
+        console.log(`Auto: ${this.marca}, ${this.modelo}`);
     }
 }
 
